@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:background="@color/background"
+    tools:context="com.payjoe.adukosakata.FindMatchActivity">
+
+   <LinearLayout
+        android:id="@+id/user_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="8dp"
+        android:layout_above="@+id/vertical_line">
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="My Username"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="24sp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/user_name"
+            android:paddingTop="4dp">
+
+            <TextView
+                android:id="@+id/user_rank_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/user_name"
+                android:text="Rank : "
+                android:textSize="16sp"
+                android:textColor="@color/white_70"/>
+
+            <TextView
+                android:id="@+id/user_rank_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/user_name"
+                android:text="120"
+                android:textSize="16sp"
+                android:textColor="@color/white_70"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/vertical_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_centerVertical="true"
+        android:background="@color/white_70" />
+
+    <LinearLayout
+        android:id="@+id/enemy_field"
+        android:layout_below="@+id/vertical_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:id="@+id/enemy_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="My Username"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textAlignment="textEnd"
+            android:layout_gravity="end"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/user_name"
+            android:layout_gravity="right"
+            android:paddingTop="4dp">
+
+            <TextView
+                android:id="@+id/enemy_rank_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rank : "
+                android:textSize="16sp"
+                android:textColor="@color/white_70"
+                android:textAlignment="textEnd"
+                android:layout_gravity="end"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/enemy_rank_point"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="120"
+                android:textSize="16sp"
+                android:textColor="@color/white_70"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBarFindMatch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/vertical_line"
+        android:layout_marginTop="16dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/button_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cancel"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/button"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="16dp"/>
+    </LinearLayout>
+</RelativeLayout>

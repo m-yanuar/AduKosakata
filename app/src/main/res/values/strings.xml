@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Adu Kosakata</string>
+    <!-- String Tombol Menu -->
+    <string name="settings_menu_button">Setting</string>
+    <string name="about_menu_button">About</string>
+    <string name="logout_menu_button">Log Out</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_friends">Friends</string>
+    <string name="title_myMatches">My Matches</string>
+    <string name="title_ranks">Ranks</string>
+</resources>

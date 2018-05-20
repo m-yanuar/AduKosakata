@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context="com.payjoe.adukosakata.SignInActivity">
+
+
+    <LinearLayout
+        android:id="@+id/title_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_cup_sample"/>
+        <TextView
+        android:id="@+id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adu Kosakata"
+        android:layout_centerHorizontal="true"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:textColor="@color/white_70"
+        android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:id="@+id/prakata_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tantang orang lain dalam permainan adu kosakata bahasa Inggris !"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white_70"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_below="@id/title_text"
+            android:textSize="16sp"/>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_below="@id/title_field"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp">
+        <TextView
+            android:id="@+id/loginGoogle_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masuk dengan akun Googlemu"
+            android:textSize="12sp"
+            android:textColor="@color/white_70"
+            android:layout_marginBottom="8dp"/>
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"/>
+    </LinearLayout>
+
+</RelativeLayout>

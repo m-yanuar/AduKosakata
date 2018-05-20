@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "464834826938",
+    "firebase_url": "https://adu-kosakata.firebaseio.com",
+    "project_id": "adu-kosakata",
+    "storage_bucket": "adu-kosakata.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:464834826938:android:3b8861ebc26f2594",
+        "android_client_info": {
+          "package_name": "com.payjoe.adukosakata"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "464834826938-huph3qp9hpeasmrsga00qjtec2u1tfoa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbQSEydJOcRCOVsMbl4gr2-DOh1zikmas"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
